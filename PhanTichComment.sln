@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhanTichComment", "PhanTichComment\PhanTichComment.csproj", "{B93FD624-1148-4023-B77A-DB67B32E46ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B93FD624-1148-4023-B77A-DB67B32E46ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B93FD624-1148-4023-B77A-DB67B32E46ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B93FD624-1148-4023-B77A-DB67B32E46ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B93FD624-1148-4023-B77A-DB67B32E46ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A3451998-02DD-4B63-AD12-B01572025868}
+	EndGlobalSection
+EndGlobal
