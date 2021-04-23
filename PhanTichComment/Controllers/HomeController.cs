@@ -12,9 +12,6 @@ namespace PhanTichComment.Controllers
     {
         public ActionResult Index()
         {
-            if (Session["PTComment"] != null) { 
-            ViewBag.phanTich = Session["PTComment"].ToString();
-            }
                 return View();
         }
 
