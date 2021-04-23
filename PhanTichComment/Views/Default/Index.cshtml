@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<table align="center">
+    <h3 style="text-align:center">Nhập đường dẫn liên kết tới bài viết</h3>
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary(true)
+        <tr style="height:40px; text-align: center">
+            <td></td>
+            <td>
+                <input type="text" placeholder="Bạn hãy nhập 1 đường dẫn..." name="tenDuongDan">
+            </td>
+        </tr>
+        <tr style="height:40px; text-align: center;">
+            <td></td>
+            <td>
+                <input type="submit" value="Tìm" />
+            </td>
+        </tr>
+    }
+</table>
+
+

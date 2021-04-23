@@ -9,7 +9,7 @@
     );
 </script>
 <table align="center">
-<h3 style="text-align:center">Nhập Tên Video</h3>
+<h3 style="text-align:center">Nhập Comment</h3>
 @using (Html.BeginForm())
 {
     @Html.ValidationSummary(true)
@@ -17,14 +17,14 @@
         @*<td>Tên File </td>*@
         <td></td>
         <td>
-            <input type="text" placeholder="Bạn hãy nhập tên file..." name="tenComment">
+            <input type="text" placeholder="Bạn hãy nhập 1 comment..." name="tenComment">
             @ViewData["Loi1"]
         </td>
     </tr>
     <tr style="height:40px; text-align: center;">
         <td></td>
         <td>
-            <input type="submit" value="Tìm" />
+            <input type="submit" value="Phân tích" />
         </td>
     </tr>
 }
@@ -40,3 +40,6 @@
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v10.0" nonce="RQhX7Ji0"></script>
 <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="" data-numposts="5"></div>
 
+<script>function myFunction() {
+    document.getElementById("fb-comments").innerHTML = "Paragraph changed!";
+    } </script>

@@ -1,0 +1,45 @@
+﻿@model IEnumerable<PhanTichComment.Models.KetQuaPhanTich>
+
+@{
+    ViewBag.Title = "KetQua";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Kết quả phân tích Comment</h2>
+
+<div>
+    @Html.ActionLink("Quay lại", "TaiBinhLuan") |
+    @Html.ActionLink("Xóa All", "DeletaAll")
+</div>
+<table class="table">
+    <tr>
+        <th>
+            STT
+        </th>
+        <th>
+            Nội dung
+        </th>
+        <th>
+           Kết quả
+        </th>
+        <th></th>
+    </tr>
+    @{var Number = 1; }
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>
+        @Html.Raw(Number++)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.NoiDung)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.KetQua)
+    </td>
+    <td>
+        @Html.ActionLink("Delete", "Delete", new { Id = item.Id })
+    </td>
+</tr>
+    }
+</table>

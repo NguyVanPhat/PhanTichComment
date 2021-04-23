@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "TaiBinhLuan";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div>
+    @Html.ActionLink("Quay lại", "Index")
+</div>
+<table align="center">
+    <h3 style="text-align:center">Nhập comment cần phân tích</h3>
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary(true)
+        <tr style="height:40px; text-align: center">
+            <td></td>
+            <td>
+                <input type="text" placeholder="Bạn hãy nhập 1 comment..." name="tenComment">
+            </td>
+        </tr>
+        <tr style="height:40px; text-align: center;">
+            <td></td>
+            <td>
+                <input type="submit" value="Phân tích" />
+            </td>
+        </tr>
+    }
+</table>
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v10.0" nonce="6PJG85nw"></script>
+<div class="fb-comments" id="fb-comments" data-href="@Session["linkWeb"]" data-width="" data-numposts="10"></div>
+
+@*<p id="test">test</p>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("test").innerText;
+            document.getElementById("demo").innerHTML = "vkl";
+        }
+    </script>
+
+    <p id="demo"></p>*@
+@*<button onclick="myFunction()" id="myBtn">Try it</button>
+
+<p><strong>Note:</strong> The innerText property is not supported in Internet Explorer 9 and earlier.</p>
+
+<p id="demo"></p>
+<p id="test">test</p>
+<script>
+    function myFunction() {
+        var x = document.getElementById("_5mdd").innerText;
+        document.getElementById("demo").innerHTML = x;
+    }
+</script>*@
